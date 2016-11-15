@@ -228,6 +228,11 @@ export const routes = [
         path: "list-view",
         loadChildren: () => require("./ui-category/listview/listview-examples.module")["ListViewExamplesModule"],
         data: { title: "ListView" }
+    },
+    {
+        path: "progress",
+        loadChildren: () => require("./ui-category/progress/progress-examples.module")["ProgressExamplesModule"],
+        data: { title: "Progress" }
     }
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
@@ -265,10 +270,6 @@ export const routes = [
 
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
-
-    routeEntry({ path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } }),
-    routeEntry({ path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Create Progress" } }),
-    routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
 
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
