@@ -2,26 +2,26 @@
 // >> ngmodule-config
 // >> (hide)
 import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
-import { routes, examplePipes } from "./app.routes";
-import { AppComponent } from "./app.component";
-import { NgModule } from "@angular/core";
+import { NgModule, NgModuleFactoryLoader } from "@angular/core";
+
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
+
+import { routes, examplePipes } from "./app.routes";
+import { AppComponent } from "./app.component";
 // << (hide)
-import {ModalDialogService} from "nativescript-angular/modal-dialog";
+import { ModalDialogService } from "nativescript-angular/modal-dialog";
+import { TnsNgModuleLoader } from "./tns-ng-module-factory-loader";
 // >> (hide)
 import { IfAndroidDirective, IfIosDirective } from "./ui-category/ng-directives/create-custom-directive/create-custom-directive.component"
 import { UnlessDirective } from "./ui-category/ng-directives/unless-directive/directive-unless"
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
 // << (hide)
-import {registerElement} from 'nativescript-angular/element-registry';
+import { registerElement } from 'nativescript-angular/element-registry';
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
-import {TnsGoogleMaps} from "nativescript-googlemaps"
-import {isIOS} from "platform"
-
-
-
+import { TnsGoogleMaps } from "nativescript-googlemaps";
+import { isIOS } from "platform";
 
 @NgModule({
     declarations: [
@@ -45,7 +45,13 @@ import {isIOS} from "platform"
         NativeScriptRouterModule.forRoot(routes),
     ],
     // << (hide)
-    providers:[ModalDialogService],
+    providers: [
+        ModalDialogService,
+        {
+            provide: NgModuleFactoryLoader,
+            useClass: TnsNgModuleLoader
+        },
+    ],
     entryComponents: [ModalViewComponent]
 })
 // << ngmodule-config

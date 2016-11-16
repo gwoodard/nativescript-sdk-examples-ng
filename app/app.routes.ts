@@ -156,147 +156,147 @@ export var examplePipes = [
 export const routes = [
     {
         path: "",
-        loadChildren: () => require("./examples-list.module")["ExamplesListModule"],
+        loadChildren: "./examples-list.module#ExamplesListModule",
         data: { title: "NativeScript Code Samples" }
     },
     {
         path: "action-bar",
-        loadChildren: () => require("./ui-category/action-bar/action-bar-examples.module")["ActionBarExamplesModule"],
+        loadChildren: "./ui-category/action-bar/action-bar-examples.module#ActionBarExamplesModule",
         data: { title: "ActionBar" }
     },
     {
         path: "activity-indicator",
-        loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
+        loadChildren: "./ui-category/activity-indicator/activity-indicator-examples.module#ActivityIndicatorExamplesModule",
         data: { title: "ActivityIndicator" }
     },
     {
         path: "animations",
-        loadChildren: () => require("./ui-category/animations/animations-examples.module")["AnimationsExamplesModule"],
+        loadChildren: "./ui-category/animations/animations-examples.module#AnimationsExamplesModule",
         data: { title: "Animations" }
     },
     {
         path: "button",
-        loadChildren: () => require("./ui-category/button/button-examples.module")["ButtonExamplesModule"],
+        loadChildren: "./ui-category/button/button-examples.module#ButtonExamplesModule",
         data: { title: "Button" }
     },
     {
         path: "date-picker",
-        loadChildren: () => require("./ui-category/date-picker/date-picker-examples.module")["DatePickerExamplesModule"],
+        loadChildren: "./ui-category/date-picker/date-picker-examples.module#DatePickerExamplesModule",
         data: { title: "DatePicker" }
     },
     {
         path: "dialogs",
-        loadChildren: () => require("./ui-category/dialogs/dialogs-examples.module")["DialogsExamplesModule"],
+        loadChildren: "./ui-category/dialogs/dialogs-examples.module#DialogsExamplesModule",
         data: { title: "Dialogs" }
     },
     {
         path: "formatted-string",
-        loadChildren: () => require("./ui-category/formatted-string/formated-string-examples.module")["FormattedStringExamplesModule"],
+        loadChildren: "./ui-category/formatted-string/formated-string-examples.module#FormattedStringExamplesModule",
         data: { title: "Formatted String" }
     },
     {
         path: "gestures",
-        loadChildren: () => require("./ui-category/gestures/gestures-examples.module")["GesturesExamplesModule"],
+        loadChildren: "./ui-category/gestures/gestures-examples.module#GesturesExamplesModule",
         data: { title: "Gestures" }
     },
     {
         path: "html-view",
-        loadChildren: () => require("./ui-category/htmlview/htmlview-examples.module")["HtmlViewExamplesModule"],
+        loadChildren: "./ui-category/htmlview/htmlview-examples.module#HtmlViewExamplesModule",
         data: { title: "HtmlView" }
     },
     {
         path: "image",
-        loadChildren: () => require("./ui-category/image/image-examples.module")["ImageExamplesModule"],
+        loadChildren: "./ui-category/image/image-examples.module#ImageExamplesModule",
         data: { title: "Image" }
     },
     {
         path: "label",
-        loadChildren: () => require("./ui-category/label/label-examples.module")["LabelExamplesModule"],
+        loadChildren: "./ui-category/label/label-examples.module#LabelExamplesModule",
         data: { title: "Label" }
     },
     {
         path: "layouts",
-        loadChildren: () => require("./ui-category/layouts/layouts-examples.module")["LayoutsExamplesModule"],
+        loadChildren: "./ui-category/layouts/layouts-examples.module#LayoutsExamplesModule",
         data: { title: "Layouts" }
     },
     {
         path: "list-picker",
-        loadChildren: () => require("./ui-category/listpicker/listpicker-examples.module")["ListPickerExamplesModule"],
+        loadChildren: "./ui-category/listpicker/listpicker-examples.module#ListPickerExamplesModule",
         data: { title: "ListPicker" }
     },
     {
         path: "list-view",
-        loadChildren: () => require("./ui-category/listview/listview-examples.module")["ListViewExamplesModule"],
+        loadChildren: "./ui-category/listview/listview-examples.module#ListViewExamplesModule",
         data: { title: "ListView" }
     },
     {
         path: "progress",
-        loadChildren: () => require("./ui-category/progress/progress-examples.module")["ProgressExamplesModule"],
+        loadChildren: "./ui-category/progress/progress-examples.module#ProgressExamplesModule",
         data: { title: "Progress" }
     },
     {
         path: "scroll-view",
-        loadChildren: () => require("./ui-category/scroll-view/scroll-view-examples.module")["ScrollViewExamplesModule"],
+        loadChildren: "./ui-category/scroll-view/scroll-view-examples.module#ScrollViewExamplesModule",
         data: { title: "ScrollView" }
     },
     {
         path: "search-bar",
-        loadChildren: () => require("./ui-category/search-bar/search-bar-examples.module")["SearchBarExamplesModule"],
+        loadChildren: "./ui-category/search-bar/search-bar-examples.module#SearchBarExamplesModule",
         data: { title: "SearchBar" }
     },
     {
         path: "segmented-bar",
-        loadChildren: () => require("./ui-category/segmented-bar/segmented-bar-examples.module")["SegmentedBarExamplesModule"],
+        loadChildren: "./ui-category/segmented-bar/segmented-bar-examples.module#SegmentedBarExamplesModule",
         data: { title: "SegmentedBar" }
     },
     {
         path: "slider",
-        loadChildren: () => require("./ui-category/slider/slider-examples.module")["SliderExamplesModule"],
+        loadChildren: "./ui-category/slider/slider-examples.module#SliderExamplesModule",
         data: { title: "Slider" }
     },
     {
         path: "style",
-        loadChildren: () => require("./ui-category/style/style-examples.module")["StyleExamplesModule"],
+        loadChildren: "./ui-category/style/style-examples.module#StyleExamplesModule",
         data: { title: "Style" }
     },
     {
         path: "switch",
-        loadChildren: () => require("./ui-category/switch/switch-examples.module")["SwitchExamplesModule"],
+        loadChildren: "./ui-category/switch/switch-examples.module#SwitchExamplesModule",
         data: { title: "Switch" }
     },
     {
         path: "tab-view",
-        loadChildren: () => require("./ui-category/tab-view/tab-view-examples.module")["TabViewExamplesModule"],
+        loadChildren: "./ui-category/tab-view/tab-view-examples.module#TabViewExamplesModule",
         data: { title: "TabView" }
     },
     {
         path: "text-field",
-        loadChildren: () => require("./ui-category/text-field/text-field-examples.module")["TextFieldExamplesModule"],
+        loadChildren: "./ui-category/text-field/text-field-examples.module#TextFieldExamplesModule",
         data: { title: "TextField" }
     },
     {
         path: "text-view",
-        loadChildren: () => require("./ui-category/text-view/text-view-examples.module")["TextViewExamplesModule"],
+        loadChildren: "./ui-category/text-view/text-view-examples.module#TextViewExamplesModule",
         data: { title: "TextView" }
     },
     {
         path: "time-picker",
-        loadChildren: () => require("./ui-category/time-picker/time-picker-examples.module")["TimePickerExamplesModule"],
+        loadChildren: "./ui-category/time-picker/time-picker-examples.module#TimePickerExamplesModule",
         data: { title: "TimePicker" }
     },
     {
         path: "web-view",
-        loadChildren: () => require("./ui-category/web-view/web-view-examples.module")["WebViewExamplesModule"],
+        loadChildren: "./ui-category/web-view/web-view-examples.module#WebViewExamplesModule",
         data: { title: "WebView" }
     },
     {
         path: "application",
-        loadChildren: () => require("./application/application-examples.module")["ApplicationExamplesModule"],
+        loadChildren: "./application/application-examples.module#ApplicationExamplesModule",
         data: { title: "Application" }
     },
     {
         path: "application-settings",
-        loadChildren: () => require("./application-settings/application-settings-examples.module")["ApplicationSettingsExamplesModule"],
+        loadChildren: "./application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
         data: { title: "Application Settings" }
     }
 
@@ -309,9 +309,9 @@ export const routes = [
     routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
     routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
     routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
-    
+
     routeEntry({ path: "applicationSettingsExamplesComponent", component: ApplicationSettingsExamplesComponent, data: { title: "Application Settings" } }),
-    
+
     routeEntry({ path: "valuesExampleComponent", component: ValuesExampleComponent, data: { title: "Working with values" } }),
     routeEntry({ path: "colorExamplesComponent", component: ColorExamplesComponent, data: { title: "Color" } }),
     routeEntry({ path: "creatingColorsExampleComponent", component: CreatingColorsExampleComponent, data: { title: "Creating Colors" } }),
@@ -356,10 +356,10 @@ export const routes = [
     routeEntry({path:"cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
     routeEntry({path:"headerWithMapExampleComponent", component: HeaderWithMapExampleComponent, data:{ title: "Header with map" }}),
     routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal scrolling" }}),
-    
-    routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
-    routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
-    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
+
+    routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),
+    routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),
+    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),
 
     routeEntry({path:"extendedDataEntryExamplesComponent", component: ExtendedDataEntryExamplesComponent, data:{ title: "Data entry" }}),
     routeEntry({path:"welcomeDataEntryExampleComponent", component: WelcomeDataEntryExampleComponent, data:{ title: "Welcome data entry" }}),
@@ -371,6 +371,6 @@ export const routes = [
     routeEntry({path:"userFeedExampleComponent", component: UserFeedExampleComponent, data:{ title: "User feed" }}),
 
     routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
-    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),     
+    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),
     */
 ];
