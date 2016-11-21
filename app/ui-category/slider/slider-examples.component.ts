@@ -7,11 +7,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'slider-component',
+    selector: "slider-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class SliderExamplesComponent {
     public links: Array<Link>;
 

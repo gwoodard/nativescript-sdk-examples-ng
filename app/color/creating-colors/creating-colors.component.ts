@@ -12,7 +12,7 @@ export class HexPipe implements PipeTransform{
         if(res.length === 1){
             res = "0" + res;
         }
-        return res
+        return res;
     }
 }
 

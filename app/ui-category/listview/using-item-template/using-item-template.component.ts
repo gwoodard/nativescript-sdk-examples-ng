@@ -1,8 +1,8 @@
 // >> using-item-template-code
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
 
 @Component({
-    selector: 'item-component',
+    selector: "item-component",
     template: `
         <StackLayout class="list-group-item" *ngFor="let element of data.list">
             <Label [text]="element.model"></Label>
@@ -15,7 +15,7 @@ export class ItemComponent {
 }
 
 @Component({
-    selector: 'using-item-template',
+    selector: "using-item-template",
     templateUrl: "./using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

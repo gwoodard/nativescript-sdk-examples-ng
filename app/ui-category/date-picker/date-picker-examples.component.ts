@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'date-picker-component',
+    selector: "date-picker-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class DatePickerExamplesComponent {
     public links: Array<Link>;
 

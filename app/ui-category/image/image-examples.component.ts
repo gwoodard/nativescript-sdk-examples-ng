@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'image-component',
+    selector: "image-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ImageExamplesComponent {
     public links: Array<Link>;
 

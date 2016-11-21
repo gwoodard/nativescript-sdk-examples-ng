@@ -7,11 +7,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'timer-examples-component',
-    templateUrl: '../examples-list.component.html',
+    selector: "timer-examples-component",
+    templateUrl: "../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class TimerExamplesComponent {
     public links: Array<Link>;
 

@@ -7,11 +7,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'text-field-component',
+    selector: "text-field-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class TextFieldExamplesComponent {
     public links: Array<Link>;
 

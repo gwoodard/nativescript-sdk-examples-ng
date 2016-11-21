@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'label-component',
+    selector: "label-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class LabelExamplesComponent {
     public links: Array<Link>;
 

@@ -1,5 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
-import {ObservableArray} from "data/observable-array";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 // >> dataentry-wellcome-login-code
 @Component({
     selector: "dataentry-welcome-listview",
@@ -23,7 +22,7 @@ export class WelcomeDataEntryExampleComponent  {
     }
 
     public signin(email, password){
-        console.log("email: "+email+" password: "+password);
+        console.log("email: " + email + " password: " + password);
     }
 
     public forgottenpassword(){

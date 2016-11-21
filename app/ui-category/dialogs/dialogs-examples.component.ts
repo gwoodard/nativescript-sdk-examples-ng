@@ -10,11 +10,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'dialog-component',
+    selector: "dialog-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class DialogsExamplesComponent {
     public links: Array<Link>;
 

@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'htmlview-component',
+    selector: "htmlview-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class HtmlViewExamplesComponent {
     public links: Array<Link>;
 

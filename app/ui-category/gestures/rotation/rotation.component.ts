@@ -1,22 +1,21 @@
 import { Component}  from "@angular/core";
 import { GridLayout } from "ui/layouts/grid-layout";
-// >> rotation-code 
+// >> rotation-code
 import { RotationGestureEventData } from "ui/gestures";
 
 @Component({
     selector: "rotation-gesture",
     templateUrl: "./rotation.component.html"
 })
-
 export class RotationExampleComponent {
     public angle: number;
     public state: number;
 
     onRotation(args: RotationGestureEventData) {
-        console.log("Rotation!")
+        console.log("Rotation!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
-        console.log("Event name: " + args.eventName);   
+        console.log("Event name: " + args.eventName);
         console.log("Rotate angle: " + args.rotation + " state: " + args.state);
 
         this.angle = args.rotation;
@@ -30,6 +29,6 @@ export class RotationExampleComponent {
                 duration: 200
             });
         }
-    }     
+    }
 }
 // << rotation-code

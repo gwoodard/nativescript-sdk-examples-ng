@@ -2,12 +2,10 @@ import { Component } from "@angular/core";
 import { EventData } from "data/observable";
 
 @Component({
-    selector: 'button-component',
-    templateUrl: './tap-event.component.html'
+    selector: "button-component",
+    templateUrl: "./tap-event.component.html"
 })
-
 export class ButtonTapEventComponent {
-
     public counter: number = 0;
 
     // >> button-tap-event-code

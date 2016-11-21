@@ -8,11 +8,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'search-bar-component',
+    selector: "search-bar-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class SearchBarExamplesComponent {
     public links: Array<Link>;
 

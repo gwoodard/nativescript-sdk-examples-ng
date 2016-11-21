@@ -6,13 +6,12 @@ var menuLinks = [
     new Link("TabView items", "/tab-view/items"),
 
 ];
-     
+
 @Component({
-    selector: 'tab-view-component',
+    selector: "tab-view-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class TabViewExamplesComponent {
     public links: Array<Link>;
 

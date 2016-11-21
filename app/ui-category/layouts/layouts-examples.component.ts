@@ -13,11 +13,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'layouts-component',
+    selector: "layouts-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class LayoutsExamplesComponent {
     public links: Array<Link>;
 

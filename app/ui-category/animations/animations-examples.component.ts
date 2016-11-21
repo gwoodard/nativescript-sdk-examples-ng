@@ -8,8 +8,8 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'animations-component',
-    templateUrl: '../../examples-list.component.html',
+    selector: "animations-component",
+    templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

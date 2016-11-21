@@ -1,18 +1,16 @@
 // >> textview-edit-disable-code
 import { Component } from "@angular/core";
-import { TextView } from "ui/text-view"
-import { isAndroid } from "platform"
+import { TextView } from "ui/text-view";
+import { isAndroid } from "platform";
 
 @Component({
-    selector: 'basic-text-view-component',
+    selector: "basic-text-view-component",
     // >> (hide)
     styleUrls: ["./style.css"],
     // << (hide)
-    templateUrl: './basic-text-view.component.html'
+    templateUrl: "./basic-text-view.component.html"
 })
-
 export class BasicTextViewComponent {
-
     public editState = true;
     public tvtext = "";
     public buttonText = "Disable editting of TextView";
@@ -38,6 +36,5 @@ export class BasicTextViewComponent {
             textview.android.clearFocus();
         }
     }
-
 }
 // << textview-edit-disable-code

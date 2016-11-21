@@ -15,7 +15,7 @@ export class Country {
 }
 
 export class GroupFooter{
-    constructor(public description: string) { }   
+    constructor(public description: string) { }
 }
 
 export var mockedDataArray = [
@@ -36,7 +36,7 @@ export var mockedDataArray = [
     new Country("Romania", "~/common-screens-category/listview/images/flags/ro.png", "Europe", mockedDescriptionType2),
     new Country("Russia", "~/common-screens-category/listview/images/flags/ru.png", "Europe", mockedDescriptionType4),
     new Country("United States", "~/common-screens-category/listview/images/flags/us.png", "North America", mockedDescriptionType3),
-]
+];
 export var mockedGroupDataArray = [
     new GroupTitle("Asia"),
     new Country("China", "~/common-screens-category/listview/images/flags/cn.png", "Asia", mockedDescriptionType4),
@@ -60,4 +60,4 @@ export var mockedGroupDataArray = [
     new Country("Jamaica", "~/common-screens-category/listview/images/flags/jm.png", "North America", mockedDescription),
 
     new GroupFooter("all countries loaded!")
-]
+];

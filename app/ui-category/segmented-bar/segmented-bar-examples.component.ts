@@ -7,11 +7,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'segmented-bar-component',
+    selector: "segmented-bar-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class SegmentedBarExamplesComponent {
     public links: Array<Link>;
 

@@ -2,17 +2,17 @@ import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
 // >> connectivity-import-code
 import * as connectivity from "connectivity";
 // << connectivity-import-code
-@Component({
-    selector: 'using-connectivity-component',
-    templateUrl: './using-connectivity.component.html'
-})
 
+@Component({
+    selector: "using-connectivity-component",
+    templateUrl: "./using-connectivity.component.html"
+})
 export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
     public connectionType: string;
 
     constructor(private zone: NgZone) {
         // >> connectivity-gettype-code
-        var connectionType = connectivity.getConnectionType();
+        let connectionType = connectivity.getConnectionType();
         switch (connectionType) {
             case connectivity.connectionType.none:
                 this.connectionType = "None";

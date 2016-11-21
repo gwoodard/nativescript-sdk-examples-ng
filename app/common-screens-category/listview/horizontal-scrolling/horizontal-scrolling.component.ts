@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
-import { mockedDataArray } from "../mock-dataItems"
+import { mockedDataArray } from "../mock-dataItems";
 import { EventData } from "data/observable";
 import { ScrollView, ScrollEventData } from "ui/scroll-view";
 

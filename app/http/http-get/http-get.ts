@@ -2,15 +2,15 @@ import { Component, OnInit } from "@angular/core";
 // >> import-http-module-get
 import { getFile, getImage, getJSON, getString, request } from "http";
 // << import-http-module-get
-import { isAndroid } from "platform"
+import { isAndroid } from "platform";
 import { path, knownFolders, File } from "file-system";
 import { Page } from "ui/page";
 import { fromFile } from "image-source";
-import { Image } from "ui/image"
+import { Image } from "ui/image";
 
 @Component({
-    selector: 'http-get-component',
-    templateUrl: './http-get.html'
+    selector: "http-get-component",
+    templateUrl: "./http-get.html"
 })
 
 export class HttpGetComponent implements OnInit {
@@ -29,7 +29,7 @@ export class HttpGetComponent implements OnInit {
         var platformName = "iOS";
 
         if (isAndroid) {
-            platformName = "Android"
+            platformName = "Android";
         }
         // >> getstring-http-module
         getString("https://httpbin.org/get").then((r) => {
@@ -45,7 +45,7 @@ export class HttpGetComponent implements OnInit {
                 this.origin = (<any>r).origin;
                 this.url = (<any>r).url;
             }, (e) => {
-                alert("GetJSON: " + e)
+                alert("GetJSON: " + e);
             });
         // << getJSON-http-module
         // >> getImage-http-module

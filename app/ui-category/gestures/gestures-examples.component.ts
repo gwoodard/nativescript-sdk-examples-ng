@@ -13,7 +13,7 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'gestures-component',
+    selector: "gestures-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

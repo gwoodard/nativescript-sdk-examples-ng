@@ -8,11 +8,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'button-component',
+    selector: "button-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ButtonExamplesComponent {
     public links: Array<Link>;
 

@@ -2,19 +2,17 @@
 import {Component, OnInit} from "@angular/core";
 import {WebView, LoadEventData} from "ui/web-view";
 import {Page} from "ui/page";
-import {TextField} from "ui/text-field"
+import {TextField} from "ui/text-field";
 
 @Component({
-    selector: 'basic-web-view-component',
-    templateUrl: './basic-web-view.component.html',
+    selector: "basic-web-view-component",
+    templateUrl: "./basic-web-view.component.html",
     styleUrls:["./style.css"]
 })
-
 export class BasicWebViewComponent implements OnInit {
-    
     public url="https://www.google.com";
     public webviewsrc="https://www.google.com";
-    
+
     constructor(private page: Page) {
     }
 
@@ -32,17 +30,17 @@ export class BasicWebViewComponent implements OnInit {
             alert("WebView message - " + message);
         });
     }
-        
+
     loadPage(){
         let textField:TextField = this.page.getViewById<TextField>("urlField");
 
-        if(this.url.substring(0, 4) === 'http'){
+        if(this.url.substring(0, 4) === "http"){
             this.webviewsrc = this.url;
             textField.dismissSoftInput();
         }else{
             alert("Please, add `http://` or `https://` in front of the URL string");
         }
-        
+
     }
 
     goBack(){
@@ -55,7 +53,7 @@ export class BasicWebViewComponent implements OnInit {
     submit(args:string){
         let textField:TextField = this.page.getViewById<TextField>("urlField");
 
-        if(args.substring(0, 4) === 'http'){
+        if(args.substring(0, 4) === "http"){
             this.webviewsrc = args;
             textField.dismissSoftInput();
         }else{

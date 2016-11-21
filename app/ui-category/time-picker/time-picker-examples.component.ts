@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'time-picker-component',
+    selector: "time-picker-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class TimePickerExamplesComponent {
     public links: Array<Link>;
 

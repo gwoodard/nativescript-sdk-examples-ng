@@ -1,18 +1,17 @@
 // >> using-async-pipe-code
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { Observable as RxObservable } from 'rxjs/Observable';
+import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { Observable as RxObservable } from "rxjs/Observable";
 
 export class DataItem {
     constructor(public id: number, public name: string) { }
 }
 
 @Component({
-    selector: 'list-test-async',
+    selector: "list-test-async",
     styleUrls: ["./using-async-pipe.component.css"],
     templateUrl: "./using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
 export class UsingAsyncPipeComponent {
     public myItems: RxObservable<Array<DataItem>>;
 
@@ -28,7 +27,7 @@ export class UsingAsyncPipeComponent {
             subscriber.next(items);
             return function () {
                 console.log("Unsubscribe called!");
-            }
+            };
         });
 
         let counter = 2;

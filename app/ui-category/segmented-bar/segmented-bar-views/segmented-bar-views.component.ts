@@ -3,13 +3,11 @@ import { Component } from "@angular/core";
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: 'segmented-bar-views-component',
-    styleUrls: ['./style.css'],
-    templateUrl: './segmented-bar-views.component.html'
+    selector: "segmented-bar-views-component",
+    styleUrls: ["./style.css"],
+    templateUrl: "./segmented-bar-views.component.html"
 })
-
 export class SegmentedBarViewsComponent {
-
     public Items: Array<SegmentedBarItem>;
     public selectedIndex = 0;
     public visibility1 = true;
@@ -36,23 +34,19 @@ export class SegmentedBarViewsComponent {
                 this.visibility2 = false;
                 this.visibility3 = false;
                 break;
-
             case 1:
                 this.visibility1 = false;
                 this.visibility2 = true;
                 this.visibility3 = false;
                 break;
-
             case 2:
                 this.visibility1 = false;
                 this.visibility2 = false;
                 this.visibility3 = true;
                 break;
-
             default:
                 break;
         }
     }
-
 }
 // << segmentedbar-items-setting-visibility

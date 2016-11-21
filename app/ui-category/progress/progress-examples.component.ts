@@ -7,11 +7,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'progress-component',
+    selector: "progress-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ProgressExamplesComponent {
     public links: Array<Link>;
 

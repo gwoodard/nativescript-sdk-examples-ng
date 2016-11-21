@@ -2,11 +2,11 @@ import { Component } from "@angular/core";
 // >> fs-delete-import-code
 import * as fs from "file-system";
 // << fs-delete-import-code
-@Component({
-    selector: 'delete-file-component',
-    templateUrl: './delete.component.html'
-})
 
+@Component({
+    selector: "delete-file-component",
+    templateUrl: "./delete.component.html"
+})
 export class DeleteExampleComponent {
 
     public documents: fs.Folder;
@@ -58,7 +58,7 @@ export class DeleteExampleComponent {
         if(this.myFolder) {
             // >> fs-clear-folder-code
             this.myFolder.clear()
-                .then(res =>  {
+                .then(res => {
                     // Successfully cleared the folder.
                     this.resultMessage = "Folder successfully cleared!";
                 }).catch(err => {

@@ -6,11 +6,10 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'formatted-string-component',
+    selector: "formatted-string-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class FormattedStringExamplesComponent {
     public links: Array<Link>;
 

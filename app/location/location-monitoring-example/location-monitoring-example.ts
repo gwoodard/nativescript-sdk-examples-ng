@@ -2,14 +2,12 @@ import { Component, NgZone } from "@angular/core";
 // >> import-geolocation-plugin-monitoring
 import { Location, enableLocationRequest, watchLocation, clearWatch } from "nativescript-geolocation";
 // << import-geolocation-plugin-monitoring
-import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: 'location-monitoring-example',
-    styleUrls: ['./style.css'],
-    templateUrl: './location-monitoring-example.html'
+    selector: "location-monitoring-example",
+    styleUrls: ["./style.css"],
+    templateUrl: "./location-monitoring-example.html"
 })
-
 export class LocationMonitoringExampleComponent {
     public buttonText = "Start location monitoring";
     public isMonitoring = false;
@@ -20,8 +18,6 @@ export class LocationMonitoringExampleComponent {
     public monitor_altitude: string = "0";
     public monitor_direction: string = "0";
     public monitor_speed: string = "0";
-
-
 
     constructor(private zone: NgZone) {
         enableLocationRequest(true);
@@ -44,12 +40,12 @@ export class LocationMonitoringExampleComponent {
                         this.monitor_altitude = (loc.altitude).toFixed(2);
                         this.monitor_direction = (loc.direction).toFixed(2);
                         this.monitor_speed = (loc.speed).toFixed(2);
-                    })
+                    });
                 }
-            },
-                (e) => {
-                    console.log("Error: " + e.message);
-                }, this.options);
+            }, (e) => {
+                console.log("Error: " + e.message);
+            }, this.options);
+
             this.isMonitoring = true;
             this.buttonText = "Stop location monitoring";
         }

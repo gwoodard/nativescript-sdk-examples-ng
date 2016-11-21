@@ -23,7 +23,7 @@ export class UsingCameraExampleComponent {
                 console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
             }).catch(err => {
                 console.log(err.message);
-            })
+            });
     }
     // << camera-module-photo-code
 

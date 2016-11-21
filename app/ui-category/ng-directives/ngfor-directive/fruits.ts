@@ -24,4 +24,4 @@ export var fruits = [
     "Goji berry",
     "Gooseberry",
     "Grape"
-]
+];

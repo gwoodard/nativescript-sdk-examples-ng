@@ -2,11 +2,11 @@ import { Component } from "@angular/core";
 // >> fs-create-import-code
 import * as fs from "file-system";
 // << fs-create-import-code
-@Component({
-    selector: 'create-file-component',
-    templateUrl: './create.component.html'
-})
 
+@Component({
+    selector: "create-file-component",
+    templateUrl: "./create.component.html"
+})
 export class CreateExampleComponent{
 
     public folderName: string;
@@ -34,10 +34,10 @@ export class CreateExampleComponent{
                         this.successMessage = "Successfully saved in " + this.file.path;
                         this.writtenContent = res;
                         this.isItemVisible = true;
-                    })
+                    });
             }).catch(err => {
                 // Error
             });
-        // << fs-create-all-code    
+        // << fs-create-all-code
     }
 }

@@ -2,20 +2,16 @@ import { Component } from "@angular/core";
 // >> import-geolocation-plugin
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
 // << import-geolocation-plugin
-import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: 'basic-location-example',
-    styleUrls: ['./style.css'],
-    templateUrl: './basic-location-example.html'
+    selector: "basic-location-example",
+    styleUrls: ["./style.css"],
+    templateUrl: "./basic-location-example.html"
 })
-
 export class BasicLocationExampleComponent {
-
     public distanceResult: string = "0";
     public distance: number = 0;
     public index: number = 0;
-
 
     public startpoint_longitude: number = 42.696552;
     public startpoint_latitude: number = 23.32601;
@@ -60,14 +56,13 @@ export class BasicLocationExampleComponent {
         // >> get-current-location
         getCurrentLocation({ timeout: 5000 })
             .then(location => {
-                console.log('Location received: ' + location);
+                console.log("Location received: " + location);
                 this.startpoint_latitude=location.latitude;
                 this.startpoint_longitude=location.longitude;
             }).catch(error => {
-                console.log('Location error received: ' + error);
-                alert('Location error received: ' + error);
+                console.log("Location error received: " + error);
+                alert("Location error received: " + error);
             });
         // << get-current-location
     }
-
 }

@@ -6,8 +6,8 @@ var menuLinks = [
 ];
 
 @Component({
-    selector: 'modal-page-component',
-    templateUrl: '../examples-list.component.html',
+    selector: "modal-page-component",
+    templateUrl: "../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
@@ -16,9 +16,6 @@ export class ModalPageExamplesComponent {
 
     constructor() {
         this.links = [];
-
-        for (var i = 0; i < menuLinks.length; i++) {
-            this.links.push(menuLinks[i]);
-        }
+        menuLinks.forEach(link => this.links.push(link));
     }
 }

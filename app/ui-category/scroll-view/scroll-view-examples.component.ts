@@ -6,13 +6,12 @@ var menuLinks = [
     new Link("Vertical orientation", "/scroll-view/vertical"),
     new Link("Scroll event", "/scroll-view/scroll-event")
 ];
-     
+
 @Component({
-    selector: 'scroll-view-component',
+    selector: "scroll-view-component",
     templateUrl: "../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ScrollViewExamplesComponent {
     public links: Array<Link>;
 

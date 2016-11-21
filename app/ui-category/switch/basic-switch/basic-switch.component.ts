@@ -2,11 +2,10 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'basic-switch-component',
-    templateUrl: './basic-switch.component.html',
+    selector: "basic-switch-component",
+    templateUrl: "./basic-switch.component.html",
     styleUrls: ["../switch.style.css"],
 })
-
 export class BasicSwitchComponent {
     public FirstSwitchValue = false;
     public SecondSwitchValue = true;

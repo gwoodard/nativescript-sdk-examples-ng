@@ -2,11 +2,11 @@ import { Component, OnInit } from "@angular/core";
 // >> fs-paths-import-code
 import * as fs from "file-system";
 // << fs-paths-import-code
-@Component({
-    selector: 'paths-file-component',
-    templateUrl: './paths.component.html'
-})
 
+@Component({
+    selector: "paths-file-component",
+    templateUrl: "./paths.component.html"
+})
 export class PathsExampleComponent implements OnInit {
     public documents: string;
     public currentApp: string;
@@ -64,10 +64,10 @@ export class PathsExampleComponent implements OnInit {
                     this.isContentSaved = true;
                     this.savedContent = res;
                     console.log("File content: " + res);
-                })
+                });
             }).catch(err => {
                 console.log(err.stack);
-            });;
+            });
         // << fs-paths-create-file-code
     }
 }

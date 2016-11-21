@@ -1,19 +1,16 @@
 // >> add-items-code
 import { Component } from "@angular/core";
 import { StackLayout } from "ui/layouts/stack-layout";
-import { Label } from "ui/label"
+import { Label } from "ui/label";
 
 @Component({
-    selector: 'tab-view-items-component',
-    templateUrl: './tab-view-items.component.html',
+    selector: "tab-view-items-component",
+    templateUrl: "./tab-view-items.component.html",
 })
-
 export class TabViewItemsComponent {
-
     public tabviewitems: Array<any>;
 
     constructor() {
-
         this.tabviewitems = [];
 
         var innerFirstStackLayout = new StackLayout();

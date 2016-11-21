@@ -11,6 +11,7 @@ class TimestampConsoleWriter {
         if (!console) {
             return;
         }
+
         var msgType = isUndefined(type) ? messageType.log : type;
 
         switch (msgType) {
@@ -32,11 +33,10 @@ class TimestampConsoleWriter {
 // << trace-create-custom-writer
 
 @Component({
-    selector: 'custom-tracewriter-example-component',
+    selector: "custom-tracewriter-example-component",
     styleUrls: ["./style.css"],
-    templateUrl: './custom-tracewriter-example.component.html',
+    templateUrl: "./custom-tracewriter-example.component.html",
 })
-
 export class CustomTraceWriterExampleComponent {
     public customwriter: TimestampConsoleWriter;
 

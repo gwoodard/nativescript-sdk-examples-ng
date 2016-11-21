@@ -1,13 +1,12 @@
 import { Component } from "@angular/core";
 // >> import-http-module
-import {request} from "http"
+import {request} from "http";
 // << import-http-module
 
 @Component({
-    selector: 'http-post-component',
-    templateUrl: './http-post.html'
+    selector: "http-post-component",
+    templateUrl: "./http-post.html"
 })
-
 export class HttpPostComponent {
     public name: string = "";
     public username: string = "";
@@ -25,7 +24,7 @@ export class HttpPostComponent {
             alert("Result :" + JSON.stringify(result.json));
         }).catch(err => {
             console.log("Error occurred " + err.stack);
-        })
+        });
         // << post-request-http-module
     }
 }

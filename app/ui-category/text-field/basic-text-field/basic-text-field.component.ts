@@ -3,18 +3,16 @@ import { Component } from "@angular/core";
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
-import {setTimeout} from "timer"
+import {setTimeout} from "timer";
 
 @Component({
-    selector: 'basic-text-field-component',
+    selector: "basic-text-field-component",
     // >> (hide)
     styleUrls: ["../text-field.style.css"],
     // << (hide)
-    templateUrl: './basic-text-field.component.html'
+    templateUrl: "./basic-text-field.component.html"
 })
-
 export class BasicTextFieldComponent {
-
     public birthDate;
     public isButtonVisible = false;
     public isItemVisible = false;
@@ -32,10 +30,9 @@ export class BasicTextFieldComponent {
 
         let firstTextfield:TextField =<TextField> this.page.getViewById("firstTextFieldId");
         firstTextfield.focus();
-        
     }
 
-    enterDate(){
+    enterDate() {
         let datePicker = this.page.getViewById<DatePicker>("datePicker");
         var selectedDate = new Date(datePicker.year, datePicker.month - 1, datePicker.day);
         this.birthDate=selectedDate;
@@ -43,18 +40,17 @@ export class BasicTextFieldComponent {
         this.isItemVisible=false;
     }
 
-    showDatePicker(){
+    showDatePicker() {
         let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
         this.isButtonVisible=true;
         this.isItemVisible=true;
 
         setTimeout(function(){
             textFielsBDate.dismissSoftInput();
-        },100);
-        
+        }, 100);
     }
 
-    submit(){
+    submit() {
         let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
         this.isButtonVisible=true;
         this.isItemVisible=true;
